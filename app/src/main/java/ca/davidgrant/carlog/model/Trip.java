@@ -7,14 +7,14 @@ import java.util.Date;
  */
 public class Trip {
     private String destination;
-    private Date date;
+//    private Date date;
     private String reason;
     private float distance;
     private int carId;
 
-    public Date getDate() {
-        return date;
-    }
+//    public Date getDate() {
+//        return date;
+//    }
 
     public String getDestination() {
         return destination;
@@ -30,5 +30,16 @@ public class Trip {
 
     public int getCarId() {
         return carId;
+    }
+
+    @Override
+    public String toString() {
+        return "Trip{" +
+                "destination='" + destination + '\'' +
+//                ", date=" + date +
+                ", reason='" + reason + '\'' +
+                ", distance=" + distance +
+                ", carId=" + carId +
+                '}';
     }
 }
